@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows CLI Basics</title>
+    <style>
+      html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 2.1rem;
+        margin: 4rem auto;
+      }
+
+      table {
+        width: 90%;
+        border-collapse: collapse;
+        margin: 0 4rem 0 4rem;
+      }
+      caption {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      thead {
+        background-color: #bbb;
+      }
+
+      tfoot {
+        background-color: #ccc;
+      }
+
+      thead th {
+        border-bottom: 1px solid #ccc;
+      }
+      tfoot th {
+        border-top: 1px solid #ccc;
+      }
+      table td {
+        font-size: 13px;
+        text-align: left;
+        padding: 5px;
+        height: 30px;
+        font-size: 2rem;
+      }
+
+      table tbody td {
+        text-transform: lowercase;
+      }
+
+      table tbody tr:hover {
+        background-color: #ccc;
+      }
+
+      table tbody tr:hover td:hover {
+        background-color: #333;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1" width="100%">
+      <caption>
+        Windows Basics Command Line Interface Commands
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Command</th>
+          <th>Function</th>
+        </tr>
+      </thead>
+
+      <tr>
+        <td>windows + R</td>
+        <td>run e.g. open cmd</td>
+      </tr>
+      <tr>
+        <td>windows + E</td>
+        <td>explorer</td>
+      </tr>
+      <tr>
+        <td>windows + Q</td>
+        <td>query e.g. search progras</td>
+      </tr>
+      <tr>
+        <td>windows + G</td>
+        <td>open Xbox. Followed by windows + Alt + R. you can record</td>
+      </tr>
+      <tr>
+        <td>cmd</td>
+        <td>open command prompt</td>
+      </tr>
+      <tr>
+        <td>code .</td>
+        <td>open visual studio code</td>
+      </tr>
+      <tr>
+        <td>dir</td>
+        <td>will list all directories where you are</td>
+      </tr>
+      <tr>
+        <td>cd</td>
+        <td>change directory</td>
+      </tr>
+      <tr>
+        <td>cd..</td>
+        <td>returns 1 level directory</td>
+      </tr>
+      <tr>
+        <td>title giveATitle</td>
+        <td>give your command line a title</td>
+      </tr>
+      <tr>
+        <td>ctrl+c</td>
+        <td>will spop any process that is being executed</td>
+      </tr>
+
+      <tr>
+        <td>cls</td>
+        <td>clean screen</td>
+      </tr>
+      <tr>
+        <td>exit</td>
+        <td>closes console</td>
+      </tr>
+      <tr>
+        <td>mkdir</td>
+        <td>make a directory</td>
+      </tr>
+      <tr>
+        <td>rmdir</td>
+        <td>remove a directory</td>
+      </tr>
+      <tr>
+        <td>type nul>fileName.fileExtension</td>
+        <td>create a new file</td>
+      </tr>
+      <tr>
+        <td>echo .> fileName.fileExtension</td>
+        <td>create a new file</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>echo hi there > fileName.fileExtension</td>
+        <td>create a new file with content inside. This one says "Hi There"</td>
+      </tr>
+      <tr>
+        <td>ren fileName.fileExtension newName.fileExtension</td>
+        <td>rename a file</td>
+      </tr>
+      <tr>
+        <td>del fileName.fileExtension</td>
+        <td>delete a file</td>
+      </tr>
+      <tr>
+        <td>tree</td>
+        <td>see the directory tree on your project</td>
+      </tr>
+      <tr>
+        <td>fc firstFileName.fileExtension secondFileName.fileExtension</td>
+        <td>compare files</td>
+      </tr>
+      <tr>
+        <td>cd/d D:</td>
+        <td>switches to drive D</td>
+      </tr>
+      <tr>
+        <td>help</td>
+        <td>will list all available commands</td>
+      </tr>
+      <tr>
+        <td>F7</td>
+        <td>list all commands that we have executed so far</td>
+      </tr>
+      <tr>
+        <td>systeminfo</td>
+        <td>
+          get to see all system info, such as processor, windows version, ram,
+          etc.
+        </td>
+      </tr>
+      <tr>
+        <td>systeminfo >fileName.fileExtension</td>
+        <td>export all system info to a file.</td>
+      </tr>
+      <tr>
+        <td>ipconfig/all</td>
+        <td>under Ethernet you can get to se IP data.</td>
+      </tr>
+      <tr>
+        <td>ipconfig/all > filename.fileExtension</td>
+        <td>export ip data to a file.</td>
+      </tr>
+      <tr>
+        <td>nslookup www.yourweb.com</td>
+        <td>get to see the web's ip direction.</td>
+      </tr>
+      <tr>
+        <td>ping www.yourweb.com</td>
+        <td>
+          if you get a positive response the domain is working properly. We
+          might me facing internet issues ourselves.
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
