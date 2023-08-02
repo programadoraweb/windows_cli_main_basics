@@ -1,210 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Windows CLI Basics</title>
-    <style>
-      html {
-        font-size: 62.5%;
-        box-sizing: border-box;
-      }
-      body {
-        font-size: 2.1rem;
-        margin: 4rem auto;
-      }
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Windows CLI Basics</title>
+<style>
+html {
+font-size: 62.5%;
+box-sizing: border-box;
+}
+body {
+font-size: 2.1rem;
+margin: 4rem auto;
+background-color: ivory;
+}
 
-      table {
-        width: 90%;
-        border-collapse: collapse;
-        margin: 0 4rem 0 4rem;
-      }
-      caption {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-      }
-      thead {
-        background-color: #bbb;
-      }
+table {
+width: 90%;
+border-collapse: collapse;
+margin: 0 4rem 0 4rem;
+}
+caption {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+thead {
+background-color: #bbb;
+}
 
-      tfoot {
-        background-color: #ccc;
-      }
+tfoot {
+background-color: #ccc;
+}
 
-      thead th {
-        border-bottom: 1px solid #ccc;
-      }
-      tfoot th {
-        border-top: 1px solid #ccc;
-      }
-      table td {
-        font-size: 13px;
-        text-align: left;
-        padding: 5px;
-        height: 30px;
-        font-size: 2rem;
-      }
+thead th {
+border-bottom: 1px solid #ccc;
+}
+tfoot th {
+border-top: 1px solid #ccc;
+}
+table td {
+font-size: 13px;
+text-align: left;
+padding: 5px;
+height: 30px;
+font-size: 2rem;
+}
 
-      table tbody td {
-        text-transform: lowercase;
-      }
+table tbody td {
+text-transform: lowercase;
+}
 
-      table tbody tr:hover {
-        background-color: #ccc;
-      }
+table tbody tr:hover {
+background-color: #ccc;
+}
 
-      table tbody tr:hover td:hover {
-        background-color: #333;
-        color: white;
-      }
-    </style>
-  </head>
-  <body>
-    <table border="1" width="100%">
-      <caption>
-        Windows Basics Command Line Interface Commands
-      </caption>
+table tbody tr:hover td:hover {
+background-color: #333;
+color: white;
+}
+.row_color {
+background-color: lightgray;
+font-weight: 600;
+}
+</style>
+</head>
+<body>
+<table border="1" width="100%">
+<caption>
+Windows and Linux Basics Command Line Interface Commands
+</caption>
 
-      <thead>
+<thead>
+<tr >
+<th colspan="2" >Windows</th>
+<th colspan="2">Linux</th>
+</tr>
+</thead>
+<tr>
+<td colspan="4"></td>
+</tr>
+<tr class="row_color" >
+<td >Command</td>
+<td >Function</td>
+<td >Command</td>
+<td >Function</td>
+</tr>
+<tr>
+<td>windows + R</td>
+<td>runs a program e.g. it opens cmd</td>
+<td>ctrl+ alt + T</td>
+<td>opens cmd</td>
+</tr>
+<tr>
+<td>title newTitleName</td>
+<td>give your command line a title</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>cls</td>
+<td>clears cmd line</td>
+<td>clear</td>
+<td>clears cmd line</td>
+</tr>
+<tr>
+<td>exit</td>
+<td>closes cmd line</td>
+<td>exit</td>
+<td>closes cmd line</td>
+</tr>
+<td colspan="4" style="background-color:#ccc"></td>
+</tr>
+<tr>
+<td>/?</td>
+<td>help eg. dir/? taskkill/?</td>
+<td>--help</td>
+<td>help eg. dir --help</td>
+</tr>
+<tr>
+<td>dir</td>
+<td>will list all files and directories where you are</td>
+<td>dir</td>
+<td>will list all directories where you are</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>ls -s</td>
+<td>list files and sort them by name</td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>makes a new directory</td>
+<td>mkdir</td>
+<td>makes a new directory</td>
+</tr>
+<tr>
+<td>rmdir</td>
+<td>removes a directory</td>
+<td>rmdir</td>
+<td>removes a directory</td>
+</tr>
+<tr>
+<td>cd</td>
+<td>moves between directories</td>
+<td>cd</td>
+<td>moves between directories</td>
+</tr>
+<tr>
+<td>cd/folderName</td>
+<td>moves to mentioned directory or drive eg. cd/d D: switches to drive D</td>
+<td>cd/folderName</td>
+<td>moves to mentioned directory</td>
+</tr>
+<tr>
+<td>cd..</td>
+<td>returns 1 level directory</td>
+<td>cd..</td>
+<td>returns 1 level directory</td>
+</tr>
+<tr>
+<td>cd../..</td>
+<td>returns 2 level directory</td>
+<td>cd../..</td>
+<td>returns 2 level directory</td>
+</tr>
+<tr>
+<td colspan="4" style="background-color:#ccc"></td>
+</tr>
+<tr>
+<td>type nul>fileName.fileExtension</td>
+<td>creates a new file</td>
+<td>touch fileName.fileExtension</td>
+<td>creates a new file</td>
+</tr>
+<tr>
+<td>start fileName.fileExtension</td>
+<td>opens a file</td>
+<td>open fileName.fileExtension</td>
+<td>opens a file</td>
+</tr>
+<tr>
+<td>xcopy originFileName.fileExtension destinationFileName.fileExtension</td>
+<td>copys a file</td>
+<td>xcopy originFileName.fileExtension destinationFileName.fileExtension</td>
+<td>copys a file</td>
+</tr>
+<tr>
+<td>ren fileName.fileExtension newFileName.fileExtension</td>
+<td>renames a file</td>
+<td>ren fileName.fileExtension newFileName.fileExtension</td>
+<td>renames a file</td>
+</tr>
+<tr>
+<td>del fileName.fileExtension -s</td>
+<td>deletes a file. If the folder is empity use -s</td>
+<td>rm fileName.fileExtension</td>
+<td>removes a file</td>
+</tr>
+</tr>
+<td colspan="4" style="background-color:#ccc"></td>
+</tr>
+<tr>
+    <td>whoami</td>
+    <td>outputs current user info</td>
+    <td>whoami</td>
+    <td>outputs current user info. A SUDO user indicates that it s a root/adm user</td>
+</tr>
+</tr>
+<td colspan="4" style="background-color:#ccc"></td>
+</tr>
+<tr >
+<td >systeminfo</td>
+<td >
+shows all system info, such as processor, windows version, ram,
+etc.
+</td>
+<td colspan="2">
+    <table >
         <tr>
-          <th>Command</th>
-          <th>Function</th>
+            <td>username</td>
+            <td>shows operational system eg. Linux</td>
         </tr>
-      </thead>
+        <tr>
+            <td>username -a</td>
+            <td>shows all info about the system, including archtecture</td>
+        </tr>
+        <tr>
+            <td>username -n</td>
+            <td>shows pc name</td>
+        </tr>
+        <tr>
+            <td>username -v</td>
+            <td>shows operational system version</td>
+        </tr>
+        <tr rowspan="2" style="background-color:#ccc">
+            <td></td>
+<td></td>
+        </tr>
+        <tr>
+        <tr >
+            <td>sudo lscpu</td>
+            <td>lists cpu data</td>
+        </tr>
+        <tr >
+            <td>sudo lshw</td>
+            <td>lists hardware info</td>
+        </tr>
+        <tr >
+            <td >sudo lshw -c memory -short</td>
+            <td>lists ram info</td>
+        </tr>
+        <tr>
+            <td>free</td>
+<td>shows free memory available in KB</td>
+        </tr>
+        <tr>
+            
+            <td>free -m</td>
+            <td>shows free memory available MegaBites </td>
+            </tr>
+            <tr>
+                <td>free -h</td>
+                <td>shows free memory available in GB</td>
+                </tr>
+                <tr>
+                    <td>cat/proc/sys/vm/swappiness</td>
+                    <td>shows swappiness eg.60. Swap memory is usually used when ram and cache are full.</td>
+                    </tr>
+                    <tr rowspan="2" style="background-color:#ccc">
+                        <td></td>
+                        <td></td>
 
-      <tr>
-        <td>windows + R</td>
-        <td>run e.g. open cmd</td>
-      </tr>
-      <tr>
-        <td>windows + E</td>
-        <td>explorer</td>
-      </tr>
-      <tr>
-        <td>windows + Q</td>
-        <td>query e.g. search progras</td>
-      </tr>
-      <tr>
-        <td>windows + G</td>
-        <td>open Xbox. Followed by windows + Alt + R. you can record</td>
-      </tr>
-      <tr>
-        <td>cmd</td>
-        <td>open command prompt</td>
-      </tr>
-      <tr>
-        <td>code .</td>
-        <td>open visual studio code</td>
-      </tr>
-      <tr>
-        <td>dir</td>
-        <td>will list all directories where you are</td>
-      </tr>
-      <tr>
-        <td>cd</td>
-        <td>change directory</td>
-      </tr>
-      <tr>
-        <td>cd..</td>
-        <td>returns 1 level directory</td>
-      </tr>
-      <tr>
-        <td>title giveATitle</td>
-        <td>give your command line a title</td>
-      </tr>
-      <tr>
-        <td>ctrl+c</td>
-        <td>will spop any process that is being executed</td>
-      </tr>
-
-      <tr>
-        <td>cls</td>
-        <td>clean screen</td>
-      </tr>
-      <tr>
-        <td>exit</td>
-        <td>closes console</td>
-      </tr>
-      <tr>
-        <td>mkdir</td>
-        <td>make a directory</td>
-      </tr>
-      <tr>
-        <td>rmdir</td>
-        <td>remove a directory</td>
-      </tr>
-      <tr>
-        <td>type nul>fileName.fileExtension</td>
-        <td>create a new file</td>
-      </tr>
-      <tr>
-        <td>echo .> fileName.fileExtension</td>
-        <td>create a new file</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>echo hi there > fileName.fileExtension</td>
-        <td>create a new file with content inside. This one says "Hi There"</td>
-      </tr>
-      <tr>
-        <td>ren fileName.fileExtension newName.fileExtension</td>
-        <td>rename a file</td>
-      </tr>
-      <tr>
-        <td>del fileName.fileExtension</td>
-        <td>delete a file</td>
-      </tr>
-      <tr>
-        <td>tree</td>
-        <td>see the directory tree on your project</td>
-      </tr>
-      <tr>
-        <td>fc firstFileName.fileExtension secondFileName.fileExtension</td>
-        <td>compare files</td>
-      </tr>
-      <tr>
-        <td>cd/d D:</td>
-        <td>switches to drive D</td>
-      </tr>
-      <tr>
-        <td>help</td>
-        <td>will list all available commands</td>
-      </tr>
-      <tr>
-        <td>F7</td>
-        <td>list all commands that we have executed so far</td>
-      </tr>
-      <tr>
-        <td>systeminfo</td>
-        <td>
-          get to see all system info, such as processor, windows version, ram,
-          etc.
-        </td>
-      </tr>
-      <tr>
-        <td>systeminfo >fileName.fileExtension</td>
-        <td>export all system info to a file.</td>
-      </tr>
-      <tr>
-        <td>ipconfig/all</td>
-        <td>under Ethernet you can get to se IP data.</td>
-      </tr>
-      <tr>
-        <td>ipconfig/all > filename.fileExtension</td>
-        <td>export ip data to a file.</td>
-      </tr>
-      <tr>
-        <td>nslookup www.yourweb.com</td>
-        <td>get to see the web's ip direction.</td>
-      </tr>
-      <tr>
-        <td>ping www.yourweb.com</td>
-        <td>
-          if you get a positive response the domain is working properly. We
-          might me facing internet issues ourselves.
-        </td>
-      </tr>
+        </tr>
+        <tr>
+                            <td>lsblk -i name, rota</td>
+                            <td>listing block devices - used to store data randowmly. It shows the name and rotational columns. 0 stands for non rotational disk, hence SSD. Whereas 1 stands for HDD</td>
+                            </tr>
+        <tr>
+            <td>lspci</td>
+            <td>lists peripherical components. It shows which GPU is being used, etc.</td>
+        </tr>
     </table>
-  </body>
+
+</td>
+
+
+
+<tr>
+<td>systeminfo >fileName.fileExtension</td>
+<td>export all system info to a file</td>
+<td></td>
+<td></td>
+</tr>
+
+
+
+
+<tr>
+<td>taskmgr</td>
+<td>opens task manager</td>
+<td colspan="2">
+    <table>
+        <tr>
+            <td>top</td>
+            <td>table of process</td>
+            
+        </tr>
+        <tr>
+            <td>htop</td>
+            <td>newer version of top. It needs to be installed</td>
+        </tr>
+    </table>
+</td>
+
+</tr>
+
+
+<tr>
+<td>tasklist</td>
+<td>shows all tasks running</td>
+<td colspan="2" >
+    <table>
+        <tr>
+            <td>ps</td>
+            <td>shows all processes running. PID shows the process ID.</td>
+        </tr>
+        <tr>
+            <td>ps -ef</td>
+            <td>shows particular service running</td>
+        </tr>
+    </table>
+</td>
+</tr>
+
+<tr>
+<td>taskkill/im processName.programExtension</td>
+<td>kills a process open from a program</td>
+<td colspan="2">
+    <table>
+        <tr>
+
+            <td>sudo kill pidNumber</td>
+            <td>kills a process open from a program</td>
+        </tr>
+        <tr>
+            <td>sudo killall processName</td>
+            <td>kills a process open from a program</td>
+        </tr>
+    </table>
+</td>
+</tr>
+
+<tr>
+<td>ctrl+c</td>
+<td>cancels currently running processes</td>
+<td>ctrl+c</td>
+<td>cancels currently running processes</td>
+</tr>
+<tr>
+<tr>
+<td colspan="4" style="background-color:#ccc"></td>
+</tr>
+<tr>
+<td>ipconfig/all</td>
+<td>shows IP data.</td>
+<td colspan="2">
+    <table>
+        <tr>
+            <td>ip addr show</td>
+            <td>shows all internet protocol data. Inet4 stands for ipv4 (to be deprecated protocol), whereas inet6 stands for ipv6 (newer protocol). If the protocol is dynamic, it will be written dynamic. If nothing is written, it s static.</td>
+        </tr>
+        <tr>
+            <td>ip a</td>
+            <td>shows all internet protocol data</td>
+        </tr>
+        <tr>
+        <td>hostname -I  (upper case i)</td>
+        <td>outputs ip, nothing else</td>
+    </tr>
+    <tr>
+        <td>ip r</td>
+        <td>finds a getway address</td>
+    </tr>
+        </table>
+    </td>
+
+</tr>
+<tr>
+<td>ipconfig/all > filename.fileExtension</td>
+<td>exports Ip data to a file</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>nslookup www.yourweb.com</td>
+<td>get to see the web's ip direction</td>
+<td>nslookup www.yourweb.com</td>
+<td>get to see the web's ip direction</td>
+</tr>
+<tr>
+<td>ping www.yourweb.com</td>
+<td>
+if you get a positive response the domain is working properly. Otherwise, there might be an internet issue.
+</td>
+<td>ping www.yourweb.com</td>
+<td>
+if you get a positive response the domain is working properly. Otherwise, there might be an internet issue.
+</td>
+</tr>
+<tr>
+    <td colspan="4" style="background-color:#ccc"></td>
+    </tr>
+    <tr>
+        <td>netsh</td>
+        <td>firewall configuration</td>
+        <td colspan="2">
+<table>
+    <tr>
+        <td>iptables</td>
+        <td>table with ip info</td>
+    </tr>
+    <tr>
+        <td>ufw</td>
+        <td>Uncomplicated firewall is a symplified version of IP tables.</td>
+    </tr>
+    <tr>
+        <td>ufw enable</td>
+        <td>Activates ufw in ubuntu</td>
+    </tr>
+    <tr>
+        <td>ufw deny 7777</td>
+        <td>blocks traffic on this port and returs with a denial message</td>
+    </tr>
+    <tr>
+        <td>ufw deny in 7777</td>
+        <td>blocks traffic on this port and returs with a denial message</td>
+    </tr>
+    <tr>
+        <td>ufw deny from 897.543.6.77</td>
+        <td>denies 1 specif ip</td>
+    </tr>
+    <tr>
+        <td>ufw reject out 7777</td>
+        <td>blocks traffic and does not return a denial message</td>
+    </tr>
+    <tr>
+        <td>ufw allow in 7777</td>
+        <td>releases traffic from this port</td>
+    </tr>
+    <tr>
+        <td>ufw reload</td>
+        <td>used after making changes to update system</td>
+    </tr>
+    <tr>
+        <td>ufw resset</td>
+        <td>to resset to original configuration</td>
+    </tr>
+    <tr>
+        <td>ufw status</td>
+        <td>shows status</td>
+    </tr>
+    <tr>
+        <td>ufw status numbered</td>
+        <td>lists the applied rules and its configurations</td>
+    </tr>
+    <tr>
+        <td>ufw detele 11</td>
+        <td>delets the rule, by rule number. Don t mix up with port number</td>
+    </tr>
+</table>
+</td>
+        
+    </tr>
+<tr>
+<td colspan="4" style="background-color:#ccc"></td>
+</tr>
+<tr>
+<td>windows + E</td>
+<td>explorer</td>
+<td>cmd + alt + c </td>
+<td>customized to open chrome</td>
+</tr>
+<tr>
+<td>windows + Q</td>
+<td>query e.g. search programs</td>
+<td>super</td>
+<td>query e.g. search programs</td>
+</tr>
+<tr>
+<td>windows + G</td>
+<td>open Xbox. Followed by windows + Alt + R. you can record</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+</table>
+</body>
 </html>
